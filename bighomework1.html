@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	ul,li,ol{
+		list-style: none;
+	}
+	a{
+		text-decoration: none;
+	}
+	.box1{
+		width: 100%;
+		height: 170px;
+		border-bottom: 1px solid #ff4d04;
+		z-index: 100;
+		background-color: white;
+	}
+	.b{
+		width: 100%;
+		height: 550px;
+		background-color: #f8f7f6;
+	}
+	.a1{
+		position: relative;
+		width: 1180px;
+		height: 42px;
+		margin: 0 auto;
+	}
+	.bang5mai{
+		position: absolute;
+		color: #9a9791;
+		font-size: 12px;
+		padding-top: 10px;
+	}
+	.qqtupian{
+		position: absolute;
+		margin-top: 10px;
+		margin-left: 455px;
+	}
+	.phonetupian{
+		position: absolute;
+		margin-left: 928px;
+		margin-top: 10px;
+	}
+	.weixintupian{
+		position: absolute;
+		margin-left: 493px;
+		margin-top: 11px;
+	}
+	.weibotupian{
+		position: absolute;
+		margin-top: 10px;
+		margin-left: 532px;
+	}
+	.dengluziti{
+		position: absolute;
+		color: #9a9791;
+		font-size: 12px;
+		padding-top: 10px;
+		margin-left: 570px;
+	}
+	.zhuceziti{
+		position: absolute;
+		color: #9a9791;
+		font-size: 12px;
+		padding-top: 10px;
+		margin-left: 607px;
+	}
+	.xiaoxitupian{
+		position: absolute;
+		margin-left: 649px;
+		margin-top: 10px;
+	}
+	.xiaoxiziti{
+		position: absolute;
+		color: #9a9791;
+		font-size: 12px;
+		padding-top: 10px;
+		margin-left: 670px;
+	}
+	.dingdantupian{
+		position: absolute;
+		margin-left: 710px;
+		margin-top: 10px;
+	}
+	.dingdanziti{
+		position: absolute;
+		color: #9a9791;
+		font-size: 12px;
+		padding-top: 10px;
+		margin-left: 728px;
+	}
+	.shoucangziti{
+		position: absolute;
+		color: #9a9791;
+		font-size: 12px;
+		padding-top: 10px;
+		margin-left: 793px;
+	}
+	.duihuanziti{
+		position: absolute;
+		color: #9a9791;
+		font-size: 12px;
+		padding-top: 10px;
+		margin-left: 860px;
+	}
+	.gouwuchetupian{
+		position: absolute;
+		margin-left: 1104px;
+		margin-top: 10px;
+	}
+	.gouwucheziti{
+		position: absolute;
+		color: #9a9791;
+		font-size: 12px;
+		padding-top: 10px;
+		margin-left: 1127px;
+	}
+	.shoujibanziti{
+		position: absolute;
+		color: #9a9791;
+		font-size: 12px;
+		padding-top: 10px;
+		margin-left: 937px;
+	}
+	.bang5taoziti{
+		position: absolute;
+		color: #9a9791;
+		font-size: 12px;
+		padding-top: 10px;
+		margin-left: 988px;
+	}
+	.kehufuwuziti{
+		position: absolute;
+		color: #9a9791;
+		font-size: 12px;
+		padding-top: 10px;
+		margin-left: 1035px;
+	}
+	.lingziti{
+		position: absolute;
+		color: #ff4d04;
+		font-size: 12px;
+		padding-top: 10px;
+		margin-left: 1168px;
+		font-weight: bolder;
+	}
+	.a2{
+		position: relative;
+		width: 1180px;
+		height: 62px;
+		margin: 0 auto;
+	}
+	.bang5maitupian{
+		position: absolute;
+	}
+	.search{
+		position: absolute;
+		width: 501px;
+		height: 42px;
+		float: left;
+		margin-left: 250px;
+		margin-top: 16px;
+	}
+	.search1{
+		position: absolute;
+		color: #a7a8a8;
+		font-size: 15px;
+		border: 2px solid #fe6c00;
+		width: 580px;
+		height: 39px;
+		background: url(img/souquanwang.png) no-repeat right center;
+	}
+	.erjiphone{
+		position: absolute;
+		width: 86px;
+		height: 40px;
+		border: 1px solid #9a9791;
+		border-radius:5px;
+		margin-top: 16px;
+		margin-left: 924px;
+	}
+	.xiaoxiphone{
+		position: absolute;
+		width: 86px;
+		height: 40px;
+		border: 1px solid #9a9791;
+		border-radius:5px;
+		margin-top: 16px;
+		margin-left: 1011px;
+	}
+	.ziti{
+		color: #9a9791;
+		font-size: 12px;
+		padding-top: 25px;
+	}
+	.tupian{
+		position: absolute;
+		margin-left: 30px;
+	}
+	.changjianwenti{
+		position: absolute;
+		width: 86px;
+		height: 40px;
+		border: 1px solid #ff4d04;
+		border-radius:5px;
+		margin-top: 16px;
+		margin-left: 1096px;
+		background-color: #ff4d04;
+	}
+	.changjianwentiziti{
+		position: absolute;
+		color: white;
+		font-size: 14px;
+		margin-top: 10px;
+		margin-left: 20px;
+	}
+	.wenhaoquan{
+		position: absolute;
+		margin-top: 13px;
+		margin-left: 2px;
+	}
+	.nav1{
+		position: absolute;
+		width: 555px;
+		height: 14px;
+		background-color: #fff;
+		margin-left: 430px;
+	}
+	.nav1 li{
+		float: left;
+		padding: 0 10px;
+		background: url(img/line.png) no-repeat right center;
+	}
+	.nav1 li a{
+		font-size: 10px;
+		color: #666560;
+		display: block;
+	}
+	.nav1 li:last-child{
+		background:none;
+	}
+	.quanbushangpinfenlei{
+		position: absolute;
+		width: 172px;
+		height: 41px;
+		background-color: #ff4d04;
+		margin-left: 178px;
+		margin-top: 25px;
+	}
+	.quanbushangpinfenleiziti{
+		color: white;
+		font-size: 20px;
+		text-align: center;
+		margin-top: 5px;
+	}
+	.nav{
+		position: absolute;
+		width: 1012px;
+		height: 40px;
+		background-color: #fff;
+		margin-left: 347px;
+		margin-top: 14px;
+	}
+	.nav li{
+		float:left;
+		height:45px;
+		padding: 0 30px;
+		line-height: 45px;
+	}
+	.nav li a{
+		font-size:16px;
+		display:block;
+		height:42px;
+		margin-top: 6px;
+	}
+	.bzong{
+		position: relative;
+		width: 1180px;
+		height: 550px;
+		margin: 0 auto;
+		background-color: white;
+	}
+	.b11{
+		position: absolute;
+		width: 22px;
+		height: 420px;
+		background-color: #4c4c4a;
+		border-bottom: 1px solid #ff4d04;
+	}
+	.b11ziti1{
+		position: absolute;
+		color: #924c4a;
+		font-size: 16px;
+		line-height: 25px;
+		margin-top: 22px;
+		margin-left: 2px;
+	}
+	.b11ziti2{
+		position: absolute;
+		color: #924c4a;
+		font-size: 16px;
+		line-height: 25px;
+		margin-top: 180px;
+		margin-left: 2px;
+	}
+	.b1{
+		position: absolute;
+		width: 150px;
+		height: 420px;
+		border-bottom: 1px solid #ff4d04;
+		margin-left: 22px;
+	}
+	.zuoziti{
+		font-size: 14px;
+		color: black;
+	}
+	.zuo1{
+		margin-top: 14px;
+	}
+	.b3{
+		position: absolute;
+		width: 210px;
+		height: 42px;
+		margin-left: 980px;
+		border-bottom: 1px solid #ebeae7;
+	}
+	.laba{
+		position: absolute;
+		margin-top: 12px;
+		margin-left: 20px;
+	}
+	.labaziti{
+		position: absolute;
+		font-size: 15px;
+		color: #fe6c00;
+		margin-left: 50px;
+		margin-top: 10px;
+	}
+	.jiantou{
+		position: absolute;
+		margin-top: 15px;
+		margin-left: 170px;
+	}
+	.b4{
+		position: absolute;
+		width: 210px;
+		height: 320px;
+		margin-left: 970px;
+		margin-top: 42px;
+		border-bottom: 1px solid #ebeae7;
+	}
+	.you{
+		color: #fe6c00;
+		font-size: 13px;
+		margin-left: 16px;
+	}
+	.b5{
+		position: absolute;
+		width: 172px;
+		height: 129px;
+		margin-top: 421px;
+	}
+	.list{
+		font-size: 15px; 
+		color: #e9bb68;
+		line-height: 2.6em;
+	}
+	.b6{
+		position: absolute;
+		width: 800px;
+		height: 185px;
+		margin-top: 361px;
+		margin-left: 172px;
+		border-right: 1px solid #ebeae7;
+	}
+	.b7{
+		position: absolute;
+		width: 205px;
+		height: 185px;
+		margin-left: 975px;
+		margin-top: 361px;
+	}
+	.shurushoujihao{
+		position: absolute;
+		width: 124px;
+		height: 24px;
+		margin-left: 16px;
+		margin-top: 8px;
+	}
+	.sanshi{
+		position: absolute;
+		width: 124px;
+		height: 19px;
+		margin-left: 16px;
+		margin-top: 38px;
+	}
+	.renmingbi{
+		position: absolute;
+		color: #ff9402;
+		font-size: 13px;
+		margin-top: 40px;
+		margin-left: 83px;
+	}
+	.chongzhi{
+		position: absolute;
+		width: 176px;
+		height: 24px;
+		margin-left: 16px;
+		margin-top: 65px;
+	}
+	.czong{
+		width: 100%;
+		height: 180px;
+		background-color: #f8f7f6;
+	}
+	.c{
+		position: relative;
+		width: 1180px;
+		height: 180px;
+		margin: 0 auto;
+		background-color: #f8f7f6;
+		border-bottom: 1px solid #ebeae8;
+	}
+	.c1{
+		position: absolute;
+		width: 170px;
+		height: 180px;
+		border-bottom: 1px solid white;
+	}
+	.c2{
+		position: absolute;
+		width: 800px;
+		height: 180px;
+		margin-left: 180px;
+	}
+	.c21{
+		position: absolute;
+		width: 130px;
+		height: 180px;
+		margin-left: 64px;
+	}
+	.c22{
+		position: absolute;
+		width: 128px;
+		height: 180px;
+		margin-left: 197px;
+	}
+	.c23{
+		position: absolute;
+		width: 130px;
+		height: 180px;
+		margin-left: 327px;
+	}
+	.c24{
+		position: absolute;
+		width: 135px;
+		height: 180px;
+		margin-left: 456px;
+	}
+	.c25{
+		position: absolute;
+		width: 125px;
+		height: 180px;
+		margin-left: 590px;
+	}
+	.c26{
+		position: absolute;
+		width: 78px;
+		height: 180px;
+		margin-left: 718px;
+	}
+	.biaoti{
+		font-size: 18px;
+	}
+	.biaonei{
+		font-size: 13px;
+		color: #666560;
+	}
+	.c3{
+		position: absolute;
+		width: 210px;
+		height: 180px;
+		margin-left: 972px;
+	}
+	.dzong{
+		width: 100%;
+		height: 40px;
+		background-color: #f8f7f6;
+	}
+	.ezong{
+		width: 100%;
+		height: 30px;
+		background-color: #f8f7f6;
+	}
+	.fzong{
+		width: 100%;
+		height: 20px;
+		background-color: #f8f7f6;
+	}
+	.gzong{
+		width: 100%;
+		height: 20px;
+		background-color: #f8f7f6;
+	}
+	.nav2{
+		position: relative;
+		width: 655px;
+		margin: 0 auto;
+		height: 44px;
+		background-color: #f8f7f6;
+	}
+	.nav2 li{
+		margin-top: 15px;
+		float: left;
+		padding: 0 14px;
+		background: url(img/line.png) no-repeat right center;
+	}
+	.nav2 li a{
+		font-size: 10px;
+		color: #666560;
+		display: block;
+	}
+	.nav2 li:last-child{
+		background:none;
+	}
+	.e{
+		position: relative;
+		width: 485px;
+		height: 30px;
+		background-color: #f8f7f6;
+		margin: 0 auto;
+	}
+	.eziti{
+		font-size: 10px;
+		color: #666560;
+		display: block;
+		text-align: center;
+		padding-top: 8px;
+	}
+	.f{
+		text-align: center;
+		font-size: 10px;
+		color: #666560;
+		display: block;
+	}
+	.g{
+		text-align: center;
+		font-size: 10px;
+		color: #666560;
+		display: block;
+	}
+	.h{
+		width: 100%;
+		height: 56px;
+		background-color: #f8f7f6;
+	}
+	.h1{
+		position: relative;
+		width: 784px;
+		height: 56px;
+		margin: 0 auto;
+		background-color: #f8f7f6;
+	}
+	.b2{
+		position: absolute;
+		width: 800px;
+		height: 360px;
+		overflow: hidden;
+		background-color: red;
+		margin-left: 172px;
+	}
+	.slider{
+		width: 6400px;
+		position: absolute;
+		left: -800px;
+		margin-left: 800px;
+	}
+	.slide{
+		width: 800px;
+		overflow: hidden;
+		float: left;
+	}
+	.box>span{
+		display: block;
+		width: 30px;
+		height: 50px;
+		text-align: center;
+		cursor: pointer;
+		color: #fff;
+		top: 175px;
+		line-height: 50px;
+		background: rgb(255,0,0);
+		font-size: 30px;
+		position: absolute;
+		opacity: 0;
+	}
+	#left{
+		position: absolute;
+		left: 30px;
+		top: 150px;
+		width: 40px;
+		background: white;
+	}
+	#right{
+		position: absolute;
+		right: 30px;
+		top: 150px;
+		width: 40px;
+		background: white;
+	}
+	.span{
+		position: absolute;
+		left: 280px;
+		bottom: 20px;
+	}
+	.span>li{
+		float: left;
+		width: 20px;
+		height: 20px;
+		background: #ccc;
+		cursor: pointer;
+		margin: 0 10px;
+		border-radius: 50%;
+		text-align: center;
+		color: white;
+	}
+	.span.active{
+		background: red;
+	}
+	.fudong{
+		position: fixed;
+		top: 65px;
+	    text-align: center;
+	    right: 0px;
+		width: 43px;
+		height: 506px;
+		background-color: white;
+	}
+	.fudong1{
+		height: 148px;
+		background-color: #ff9260;
+	}
+	</style>
+</head>
+<body>
+	<div class="box1">
+		<div class="a1">
+			<div class="bang5mai">
+				<p>帮5买,享帮帮</p>
+			</div>
+			<div class="qqtupian">
+				<img src="img/qq.png">
+			</div>
+			<div class="weixintupian">
+				<img src="img/weixin.png">
+			</div>
+			<div class="weibotupian">
+				<img src="img/weibo.png">
+			</div>
+			<div class="dengluziti">
+				<p>登录</p>
+			</div>
+			<div class="zhuceziti">
+				<p>注册</p>
+			</div>
+			<div class="xiaoxitupian">
+				<img src="img/xiaoxi.png">
+			</div>
+			<div class="xiaoxiziti">
+				<p>消息</p>
+			</div>
+			<div class="dingdantupian">
+				<img src="img/xiaoxi.png">
+			</div>
+			<div class="dingdanziti">
+				<p>我的订单</p>
+			</div>
+			<div class="shoucangziti">
+				<p>我的收藏</p>
+			</div>
+			<div class="duihuanziti">
+				<p>帮钻兑换</p>
+			</div>
+			<div class="phonetupian">
+				<img src="img/phone.png">
+			</div>
+			<div class="shoujibanziti">
+				<p>手机版</p>
+			</div>
+			<div class="bang5taoziti">
+				<p>帮5淘</p>
+			</div>
+			<div class="kehufuwuziti">
+				<p>客户服务</p>
+			</div>
+			<div class="gouwuchetupian">
+				<img src="img/gouwuche.jpg">
+			</div>
+			<div class="gouwucheziti">
+				<p>购物车</p>
+			</div>
+			<div class="lingziti">
+				<p>0</p>
+			</div>
+		</div>
+		<div class="a2">
+			<div class="bang5maitupian">
+				<img src="img/logo_03.jpg">
+			</div>
+			<div class="search">
+				<input type="text" value="输入商品网址或关键词,直通全网,快速帮5购!" class="search1">
+			</div>
+			<div class="erjiphone">
+				<img src="img/erji.png" class="tupian">
+				<p class="ziti">400-085-0505</p>
+			</div>
+			<div class="xiaoxiphone">
+				<img src="img/xiaoxi.png" class="tupian">
+				<p class="ziti">mc@b5m.com</p>
+			</div>
+			<div class="changjianwenti">
+				<img src="img/wenhao.jpg" class="wenhaoquan">
+				<p class="changjianwentiziti">常见问题</p>
+			</div>
+		</div>
+		<div class="quanbushangpinfenlei">
+			<p class="quanbushangpinfenleiziti">全部商品分类</p>
+		</div>
+		<ul class="nav1">
+			<li>
+				<a href="" style="color: red">洗发护发</a>
+			</li>
+			<li>
+				<a href="" style="color: red">日本纸尿裤</a>
+			</li>
+		    <li>
+				<a href="">身体乳</a>
+			</li>
+			<li>
+				<a href="">内衣文胸</a>
+			</li>	
+			<li>
+				<a href="" style="color: #c0a9d3">iPone 6s</a>
+			</li>
+			<li>
+				<a href="" style="color: #c0a9d3">iPad Air2</a>
+			</li>
+			<li>
+				<a href="">牛仔裤</a>
+			</li>	
+			<li>
+				<a href="">奶粉</a>
+			</li>
+			<li>
+				<a href="">防晒霜</a>
+			</li>
+			<li class="last">
+				<a href="">伞</a>
+			</li>		
+		</ul>
+		<ul class="nav">
+			<li>
+				<a href="">帮5赚</a>
+			</li>
+			<li>
+				<a href="">帮韩品</a>
+			</li>
+            <li>
+				<a href="">超划算</a>
+			</li>
+			<li>
+				<a href="">品牌货栈</a>
+			</li>	
+			<li>
+				<a href="">韩国馆</a>
+			</li>
+			<li>
+				<a href="">帮社区</a>
+			</li>
+			<li>
+				<a href="" class="last">1元兑奖</a>
+			</li>
+			<img src="img/hot.gif">
+		</ul>
+	</div>
+	<div class="b">
+		<div class="bzong">
+			<div class="b11">
+				<p class="b11ziti1">当前搜索电商</p>
+				<p class="b11ziti2">全网</p>
+			</div>
+			<div class="b1">
+				<table cellspacing="7" class="zuo1">
+					<tr>
+						<th><a href="" class="zuoziti">手机</a></th>
+						<th><a href="" class="zuoziti">数码</a></th>
+						<th><a href="" class="zuoziti">影音</a></th>
+						<th><a href="" class="zuoziti">配件</a></th>
+					</tr>
+					<tr>
+						<th><a href="" class="zuoziti">电脑</a></th>
+						<th><a href="" class="zuoziti">网络</a></th>
+						<th><a href="" class="zuoziti">办公</a></th>
+						<th><a href="" class="zuoziti">打印</a></th>
+					</tr>
+					<tr>
+						<th><a href="" class="zuoziti">家电</a></th>
+						<th><a href="" class="zuoziti">厨卫</a></th>
+						<th><a href="" class="zuoziti">生活</a></th>
+						<th><a href="" class="zuoziti">个户</a></th>
+					</tr>
+					<tr>
+						<th><a href="" class="zuoziti">园艺</a></th>
+						<th><a href="" class="zuoziti">家具</a></th>
+						<th><a href="" class="zuoziti">家纺</a></th>
+						<th><a href="" class="zuoziti">家饰</a></th>
+					</tr>
+					<tr>
+						<th><a href="" class="zuoziti">彩妆</a></th>
+						<th><a href="" class="zuoziti">面部</a></th>
+						<th><a href="" class="zuoziti">身体</a></th>
+						<th><a href="" class="zuoziti">香水</a></th>
+					</tr>
+					<tr>
+						<th><a href="" class="zuoziti">男装</a></th>
+						<th><a href="" class="zuoziti">女装</a></th>
+						<th><a href="" class="zuoziti">内衣</a></th>
+						<th><a href="" class="zuoziti">其他</a></th>
+					</tr>
+					<tr>
+						<th><a href="" class="zuoziti">女包</a></th>
+						<th><a href="" class="zuoziti">男包</a></th>
+						<th><a href="" class="zuoziti">女鞋</a></a></th>
+						<th><a href="" class="zuoziti">男鞋</a></th>
+					</tr>
+					<tr>
+						<th><a href="" class="zuoziti">女包</a></th>
+						<th><a href="" class="zuoziti">男包</a></th>
+						<th><a href="" class="zuoziti">女鞋</a></th>
+						<th><a href="" class="zuoziti">男鞋</a></th>
+					</tr>
+					<tr>
+						<th><a href="" class="zuoziti">运动</a></th>
+						<th><a href="" class="zuoziti">户外</a></th>
+						<th><a href="" class="zuoziti">装备</a></th>
+						<th><a href="" class="zuoziti">服饰</a></th>
+					</tr>
+					<tr>
+						<th><a href="" class="zuoziti">儿童</a></th>
+						<th><a href="" class="zuoziti">婴儿</a></th>
+						<th><a href="" class="zuoziti">食品</a></th>
+						<th><a href="" class="zuoziti">玩具</a></th>
+					</tr>
+					<tr>
+						<th><a href="" class="zuoziti">乐器</a></th>
+						<th><a href="" class="zuoziti">家宠</a></th>
+						<th><a href="" class="zuoziti">收藏</a></th>
+						<th><a href="" class="zuoziti">鲜花</a></th>
+					</tr>
+					<tr>
+						<th><a href="" class="zuoziti">保健</a></th>
+						<th><a href="" class="zuoziti">理疗</a></th>
+						<th><a href="" class="zuoziti">药品</a></th>
+						<th><a href="" class="zuoziti">眼睛</a></th>
+					</tr>
+					<tr>
+						<th><a href="" class="zuoziti">果蔬</a></th>
+						<th><a href="" class="zuoziti">礼品</a></th>
+						<th><a href="" class="zuoziti">粮油</a></th>
+						<th><a href="" class="zuoziti">特产</a></th>
+					</tr>
+					<tr>
+						<th><a href="" class="zuoziti">文艺</a></th>
+						<th><a href="" class="zuoziti">生活</a></th>
+						<th><a href="" class="zuoziti">科技</a></th>
+						<th><a href="" class="zuoziti">教育</a></th>
+					</tr>
+				</table>
+			</div>
+			<div class="b2" id="box">
+				<div class="slider" id="slider">
+					<div class="slide">
+						<img src="img/bann1.jpeg" alt="">
+					</div>
+					<div class="slide">
+						<img src="img/bann2.jpeg" alt="">
+					</div>
+					<div class="slide">
+						<img src="img/bann3.jpeg" alt="">
+					</div>
+					<div class="slide">
+						<img src="img/bann4.jpeg" alt="">
+					</div>
+					<div class="slide">
+						<img src="img/bann5.jpeg" alt="" ">
+					</div>
+					<div class="slide">
+						<img src="img/bann6.png" alt="">
+					</div>
+					<div class="slide">
+						<img src="img/bann1.jpeg" alt="">
+					</div>
+				</div>
+				<div id="left"><img src="img/spanl.jpg"></div>
+				<div id="right"><img src="img/spanr.jpg"></div>
+				<ul class="span" id="span">
+					<li class="active">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+				</ul>
+			</div>
+			<div class="b3">
+				<img src="img/ico-notice.png" class="laba">
+				<p class="labaziti">帮帮快讯</p>
+				<img src="img/jiantou.jpg" class="jiantou">
+			</div>
+			<div class="b4">
+				<table cellspacing="8">
+					<tr><td><a href="" class="you">[公告] 帮购及VIP服务调整1</a></td></tr>
+					<tr><td><a href="" class="you">[公告] 帮购及VIP服务调整2</a></td></tr>
+					<tr><td><a href="" class="you">[公告] 帮购及VIP服务调整3</a></td></tr>
+					<tr><td><a href="" class="you">[公告] 帮购及VIP服务调整4</a></td></tr>
+					<tr><td><a href="" class="you">[公告] 帮购及VIP服务调整5</a></td></tr>
+					<tr><td><a href="" class="you">[公告] 帮购及VIP服务调整6</a></td></tr>
+					<tr><td><a href="" class="you">[公告] 帮购及VIP服务调整7</a></td></tr>
+					<tr><td><a href="" class="you">[公告] 帮购及VIP服务调整8</a></td></tr>
+					<tr><td><a href="" class="you">[公告] 帮购及VIP服务调整9</a></td></tr>
+					<tr><td><a href="" class="you">[公告] 帮购及VIP服务调整10</a></td></tr>
+					<tr><td><a href="" class="you">[公告] 帮购及VIP服务调整11</a></td></tr>
+				</table>
+			</div>
+			<div class="b5">
+				<ul class="list">
+					<li style="
+						list-style-image:url(img/dd_03.jpg);
+						list-style-position:inside;">什么是帮5购
+					</li>
+					<li  style="
+						list-style-image:url(img/dd_06.jpg);
+						list-style-position:inside;">帮5购提供什么服务
+					</li>
+					<li  style="
+						list-style-image:url(img/dd_08.jpg);
+						list-style-position:inside;">如何开通帮5购服务
+					</li>
+				</ul>
+			</div>
+			<div class="b6">
+				<img src="img/1(1).jpg" style="float: left;">
+				<img src="img/2.jpg" style="float: left;">
+				<img src="img/3(1).png" style="float: left;">
+				<img src="img/qqq.png" style="float: left;">
+			</div>
+			<div class="b7">
+				<img src="img/phone.png" style="margin-left: 17px;margin-top: 6px;">
+				<a href="" style="margin-top: 8px;margin-left: 16px;font-size: 13px;">话费充值</a>
+				<a href="" style="margin-top: 8px;font-size: 13px;color: #ff9402;">(可使用超级帮钻)</a>
+				<div class="shurushoujihao">
+					<input type="text" value="请输入手机号">
+				</div>
+				<div class="sanshi">
+					<select name="">
+ 						<option value="one" selected>30</option>
+ 						<option value="two">100</option>
+ 						<option value="two">80</option>
+ 						<option value="two">150</option>
+ 					</select>
+				</div>
+				<div class="renmingbi">
+					<p>¥ 30</p>
+				</div>
+				<div class="chongzhi">
+					<input type="button" value="充值" style="width: 176px;height: 24px;background-color: #ff9402;text-align: center;border: 1px solid #9a9791;
+		border-radius:5px;">
+				</div>				
+			</div>
+		</div>
+	</div>
+	<div class="czong">
+	<div class="c"> 
+			<div class="c1">
+				<img src="img/loginB.jpg">
+			</div>
+			<div class="c2">
+				<div class="c21">
+					<ul style="line-height: 25px;margin-top: 30px">
+						<li class="biaoti">购物指南</li>
+						<li class="biaonei">如何下单</li>
+						<li class="biaonei">帮5购流程</li>
+						<li class="biaonei">订单查询</li>
+						<li class="biaonei">物流配送</li>
+					</ul>
+				</div>
+				<div class="c22">
+					<ul style="line-height: 25px;margin-top: 30px">
+						<li class="biaoti">支付相关</li>
+						<li class="biaonei">支付方式</li>
+						<li class="biaonei">安全设置</li>
+						<li class="biaonei">账户信息</li>
+					</ul>
+				</div>
+				<div class="c23">
+					<ul style="line-height: 25px;margin-top: 30px">
+						<li class="biaoti">售后服务</li>
+						<li class="biaonei">取消订单</li>
+						<li class="biaonei">申请售后</li>
+						<li class="biaonei">退货流程</li>
+						<li class="biaonei">退款相关</li>
+					</ul>
+				</div>
+				<div class="c24">
+					<ul style="line-height: 25px;margin-top: 30px">
+						<li class="biaoti">VIP服务</li>
+						<li class="biaonei">VIP优惠</li>
+						<li class="biaonei">超级帮钻</li>
+					</ul>
+				</div>
+				<div class="c25">
+					<ul style="line-height: 25px;margin-top: 30px">
+						<li class="biaoti">帮韩品</li>
+						<li class="biaonei">韩国正品</li>
+						<li class="biaonei">闪电发货</li>
+						<li class="biaonei">帮韩品售后</li>
+					</ul>
+				</div>
+				<div class="c26">
+					<ul style="line-height: 25px;margin-top: 30px">
+						<li class="biaoti">更多</li>
+						<li class="biaonei">手机APP</li>
+						<li class="biaonei">帮5采APP</li>
+						<li class="biaonei">帮5淘插件</li>
+						<li class="biaonei">其他</li>
+					</ul>
+				</div>
+			</div>
+			<div class="c3">
+				<img src="img/erweima.jpg" style="margin-left: 40px;margin-top: 24px;">
+			</div>
+		</div>
+	</div>
+	<div class="dzong">
+		<ul class="nav2">
+			<li>
+				<a href="">关于帮5买</a>
+			</li>
+			<li>
+				<a href="">联系我们</a>
+			</li>
+		    <li>
+				<a href="">合作商家</a>
+			</li>
+			<li>
+				<a href="">友情链接</a>
+			</li>	
+			<li>
+				<a href="">加入我们</a>
+			</li>
+			<li>
+				<a href="">移动应用</a>
+			</li>
+			<li>
+				<a href="">热门</a>
+			</li>	
+			<li>
+				<a href="">奶粉</a>
+			</li>
+			<li>
+				<a href="">广告联盟</a>
+			</li>
+			<li class="last">
+				<a href="">使用条款</a>
+			</li>		
+		</ul>
+	</div>
+	<div class="ezong"> 
+		<div class="e">
+			<a href="" class="eziti">Copyright @ 2011-2015 B5M.COM.ALL right reserved.Powered by B5Msoft Co.Ltd.</a>
+		</div>
+	</div>
+	<div class="fzong">
+		<a href="" class="f">增值电信业务经营许可证:沪B2-20130065号|中华人名共和国互联网药品信息服务资格证书(沪)-非经营性-2013-0034 沪卫(中医)网审[2015] 10032号 沪ICP备11034776号-3|食品流通许可证:</a>
+	</div>
+	<div class="gzong">
+		<a href="" class="g">SP3101151410301755</a>
+	</div>
+	<div class="h">
+		<div class="h1">
+			<img src="img/bo1.gif">
+			<img src="img/bo2.png">
+			<img src="img/bo3.gif">
+			<img src="img/bo4.png">
+			<img src="img/bo5.png">
+			<img src="img/bo6.png">
+			<img src="img/bo7.png">
+		</div>
+	</div>
+	<div class="fudong">
+		<img src="img/consult-s.png">
+		<img src="img/xiaobang.png">
+		<img src="img/youhui.png">
+		<div class="fudong1">
+			<img src="img/serwei.png">
+		</div>
+		<img src="img/cart.png">
+	</div>
+
+
+
+
+
+
+
+
+
+	<script type="text/javascript">
+		var slider = document.getElementById('slider');
+		var left=document.getElementById('left');
+		var right=document.getElementById('right');
+		var oNavlist=document.getElementById('span').children;
+		var index = 1;
+		function next(){
+			index++;
+			animate(slider,{left:-800*index},function(){
+				if(index==7){
+					slider.style.left='-800px';
+					index=1;
+				}
+			})
+			spanChange();
+		}
+		function prev() {
+			index--;
+			spanChange();
+			animate(slider,{left:-800*index},function(){
+				if(index==0){
+					slider.style.left='-4800px';
+					index=6;
+				}
+			})
+		}
+		var timer=setInterval(next,3000);
+		//鼠标划图上，停止轮播
+		box.onmouseover=function(){
+			clearInterval(timer);
+			animate(left,{opacity:50});
+			animate(right,{opacity:50});
+		}
+		//鼠标划出，继续轮播
+		box.onmouseout=function(){
+			animate(left,{opacity:0});
+			animate(right,{opacity:0});
+			timer=setInterval(next,3000);
+		}
+		//点击左右箭头
+		right.onclick=next;
+		left.onclick=prev;
+		//点击小按钮
+		for(var i=0;i<oNavlist.length;i++){
+			oNavlist[i].idx=i;
+			oNavlist[i].onclick=function(){
+				index=this.idx+1;
+				animate(slider,{left:800*index})
+				spanChange();
+			}
+		}
+		function spanChange(){
+			for(var i=0;i<oNavlist.length;i++){
+				oNavlist[i].className='';
+			}
+			if(index==7){
+				oNavlist[0].className='active';
+			}
+			else if(index==0){
+				oNavlist[5].className='active';
+			}
+			else{
+				oNavlist[index-1].className='active';
+			}
+		}
+
+	function animate(obj,json,callback){		
+			clearInterval(obj.timer);
+			obj.timer = setInterval(function(){	
+				var isStop = true;
+				for (var attr in json){
+					if(attr=='opacity'){
+						var now = parseInt(getStyle(obj,attr)*100);
+					}else{
+						var now = parseInt(getStyle(obj,attr));
+					}
+					
+					var speed = (json[attr]-now)/5;
+					speed = speed>0?Math.ceil(speed):Math.floor(speed);
+					if (attr=='opacity') {
+						obj.style[attr]=(now+speed)/100;
+					}else{
+						obj.style[attr]=now+speed+'px';
+					}
+					
+					var current = now+speed;
+					if(json[attr]!==current){
+						isStop = false;
+					}
+				}					
+				if(isStop){
+					clearInterval(obj.timer)
+					callback&&callback();
+				}
+		 	},10)	
+		}
+		function getStyle(obj,style){
+			if(getComputedStyle(obj)){
+				return getComputedStyle(obj)[style];
+			}else{
+				obj.currentStyle[style];
+			}		
+		}
+		window.onload = function(){
+			var box1 = document.getElementsByClassName('box1')[0];
+			window.onscroll = function(){
+				var st = document.documentElement.scrollTop || document.body.scrollTop;
+				if(st > 100){
+					box1.style.position = 'fixed';
+				}else{
+					box1.style.position = 'static';
+				}
+			}
+		}
+	</script>
+</body>
+</html>
